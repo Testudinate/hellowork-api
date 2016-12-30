@@ -21,5 +21,6 @@ RUN make
 # Clean apk cache
 RUN rm -rf /var/cache/apk/*
 
-CMD hellowork
+EXPOSE 8080
 
+CMD hellowork-api
