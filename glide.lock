@@ -1,0 +1,43 @@
+hash: 995a3283232e86c877f8a29f1dcd78d1bd01d81e29d7a8fc09c8b3bdcea46bd6
+updated: 2016-12-30T19:32:21.274466652+01:00
+imports:
+- name: github.com/dgrijalva/jwt-go
+  version: d2709f9f1f31ebcda9651b03077758c1f3a0018c
+- name: github.com/dimfeld/httptreemux
+  version: e26f30cd88e1dd9707cb61d74fa5ee6b444fdb85
+- name: github.com/hellofresh/goengine
+  version: b8c7183d9afd2c636637c52967684dd2c99003dc
+- name: github.com/hellofresh/janus
+  version: 3d34590e3e9f76da128ca18eab8df7427cb27e44
+  subpackages:
+  - mock
+  - request
+  - response
+- name: github.com/italolelis/hellowork
+  version: 3d5a338ce97cec16e12dd16b00170ebe871656cf
+  subpackages:
+  - model
+  - time
+- name: github.com/justinas/alice
+  version: 052b8b6c18edb9db317af86806d8e00ebaa94160
+- name: github.com/kelseyhightower/envconfig
+  version: 9aca109c9aec4633fced9717c4a09ecab3d33111
+- name: github.com/Sirupsen/logrus
+  version: d26492970760ca5d33129d2d799e34be5c4782eb
+- name: golang.org/x/sys
+  version: a408501be4d17ee978c04a618e7a1b22af058c0e
+  subpackages:
+  - unix
+testImports:
+- name: github.com/davecgh/go-spew
+  version: 5215b55f46b2b919f50a1df0eaa5886afe4e3b3d
+  subpackages:
+  - spew
+- name: github.com/pmezard/go-difflib
+  version: 792786c7400a136282c1664665ae0a8db921c6c2
+  subpackages:
+  - difflib
+- name: github.com/stretchr/testify
+  version: 69483b4bd14f5845b5a1e55bca19e954e827f1d0
+  subpackages:
+  - assert

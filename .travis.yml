@@ -1,0 +1,22 @@
+sudo: required
+services:
+  - docker
+
+language: go
+
+before_script:
+  - docker build -t italolelis/hellowork .
+  - docker tag italolelis/hellowork italolelis/hellowork:web
+  - docker tag italolelis/hellowork registry.heroku.com/hello-work-staging/web
+
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker login -u="$DOCKER_HUB_USERNAME" -p="$DOCKER_HUB_PASSWORD";
+    docker push italolelis/hellowork:web
+
+    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" registry.heroku.com;
+    docker push registry.heroku.com/hello-work-staging/web;
+    fi
+
+script:
+- make
