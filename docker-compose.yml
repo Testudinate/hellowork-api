@@ -2,16 +2,14 @@ version: '2'
 services:
 
     hellowork-api:
-        image: registry.heroku.com/hello-work-staging/web
-        environment: 
+        image: italolelis/hellowork:web
+        environment:
             PORT: "8080"
             LOG_LEVEL: "debug"
-            SLACK_TOKEN: "Your slack token"
-            DATABASE_DSN: "postgres://postgres/hellowork?sslmode=disable"
+            DATABASE_WRITE_DSN: "mongodb://mongodb/hellowork_work?sslmode=disable"
+            DATABASE_READ_DSN: "mongodb://mongodb/hellowork_read?sslmode=disable"
 
-    postgres:
-        image: postgres
-        ports:
-            - "5432:5432"
-        environment:
-            POSTGRES_DB: hellowork
+    mongodb:
+         image: mongo
+         ports:
+             - "27017:27017"
