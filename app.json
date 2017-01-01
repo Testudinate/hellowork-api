@@ -1,8 +1,8 @@
 {
   "name": "Hello Work API",
-  "description": "A tiny slack bot to notify your collegues when you are out of the office",
+  "description": "A tiny slack bot to notify your colleagues when you are out of the office",
   "logo": "https://raw.githubusercontent.com/italolelis/hellowork/master/resources/logo_512.png?v=3",
-  "repository": "https://github.com/italolelis/hellowork",
+  "repository": "https://github.com/italolelis/hellowork-api",
   "keywords": ["go", "slack", "bot"],
   "env": {
     "PORT": {
@@ -13,13 +13,16 @@
       "description": "the log level that you want to use `debug`, `info`, `warning`, `error`",
       "value": ""
     },
-    "SLACK_TOKEN": {
-      "description": "access token of your slack bot. You can learn more at https://api.slack.com/bot-users",
+    "DATABASE_WRITE_DSN": {
+      "description": "The write database dsn",
       "value": ""
     },
-    "DATABASE_DSN": {
-      "description": "The postgres database dsn",
+    "DATABASE_READ_DSN": {
+      "description": "The read database dsn",
       "value": ""
     }
-  }
+  },
+  "addons": [
+    "mongolab"
+  ]
 }
