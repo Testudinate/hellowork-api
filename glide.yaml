@@ -9,7 +9,7 @@ import:
 - package: github.com/justinas/alice
   version: ^1.0.0
 - package: github.com/hellofresh/goengine
-  version: b8c7183d9afd2c636637c52967684dd2c99003dc
+  version: ^0.1.0
 - package: github.com/satori/go.uuid
   version: ^1.1.0
 - package: gopkg.in/mgo.v2

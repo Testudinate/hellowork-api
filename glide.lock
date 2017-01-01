@@ -1,12 +1,12 @@
-hash: 683c6567f9ffb7552ac181d27438808a18ceff30dbf19dc4ac4200aca18e2277
-updated: 2017-01-01T17:56:48.172750799+01:00
+hash: 9c460ac098efd5236117ac599b7b613d7a1d6587835c9af227088fb2c944960d
+updated: 2017-01-01T18:04:26.713621523+01:00
 imports:
 - name: github.com/dgrijalva/jwt-go
   version: d2709f9f1f31ebcda9651b03077758c1f3a0018c
 - name: github.com/dimfeld/httptreemux
   version: a12c89c2c0f23f880dfd74af4832a23bae6e837a
 - name: github.com/hellofresh/goengine
-  version: b8c7183d9afd2c636637c52967684dd2c99003dc
+  version: dc0acb46730f3e4baf26fab012892237ca414104
   subpackages:
   - errors
   - inmemory
