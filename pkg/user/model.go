@@ -1,15 +1,15 @@
 package user
 
 import (
-	"time"
 	"github.com/hellofresh/goengine"
+	"time"
 )
 
 type User struct {
 	*goengine.AggregateRootBased
-	CreatedAt time.Time     `bson:"created_at" json:"created_at"`
-	UpdatedAt time.Time     `bson:"created_at" json:"created_at"`
-	Username  string        `bson:"username" json:"username"`
+	CreatedAt time.Time `bson:"created_at" json:"created_at"`
+	UpdatedAt time.Time `bson:"created_at" json:"created_at"`
+	Username  string    `bson:"username" json:"username"`
 }
 
 func NewUser(id string, username string) *User {

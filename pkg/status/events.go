@@ -3,9 +3,9 @@ package status
 import "time"
 
 type StatusCreated struct {
-	occurredOn time.Time        `bson:"occurred_on" json:"occurred_on"`
-	ID         string           `bson:"id" json:"id"`
-	UserID     string           `bson:"user_id" json:"user_id"`
+	Occurred time.Time `bson:"occurred_on" json:"occurred_on"`
+	ID       string    `bson:"id" json:"id"`
+	UserID   string    `bson:"user_id" json:"user_id"`
 }
 
 func NewStatusCreated(id string, userID string) *StatusCreated {
@@ -13,12 +13,12 @@ func NewStatusCreated(id string, userID string) *StatusCreated {
 }
 
 func (e *StatusCreated) OccurredOn() time.Time {
-	return e.occurredOn
+	return e.Occurred
 }
 
 type StatusRemoved struct {
-	occurredOn time.Time        `bson:"occurred_on" json:"occurred_on"`
-	ID         string           `bson:"id" json:"id"`
+	Occurred time.Time `bson:"occurred_on" json:"occurred_on"`
+	ID       string    `bson:"id" json:"id"`
 }
 
 func NewStatusRemoved(id string) *StatusRemoved {
@@ -26,12 +26,12 @@ func NewStatusRemoved(id string) *StatusRemoved {
 }
 
 func (e *StatusRemoved) OccurredOn() time.Time {
-	return e.occurredOn
+	return e.Occurred
 }
 
 type AllDay struct {
-	occurredOn time.Time        `bson:"occurred_on" json:"occurred_on"`
-	ID         string           `bson:"id" json:"id"`
+	Occurred time.Time `bson:"occurred_on" json:"occurred_on"`
+	ID       string    `bson:"id" json:"id"`
 }
 
 func NewAllDay(id string) *AllDay {
@@ -39,14 +39,14 @@ func NewAllDay(id string) *AllDay {
 }
 
 func (e *AllDay) OccurredOn() time.Time {
-	return e.occurredOn
+	return e.Occurred
 }
 
 type StatusTime struct {
-	occurredOn time.Time        `bson:"occurred_on" json:"occurred_on"`
-	ID         string           `bson:"id" json:"id"`
-	StartsAt   time.Time        `bson:"starts_at" json:"starts_at"`
-	EndsAt     time.Time        `bson:"ends_at" json:"ends_at"`
+	Occurred time.Time `bson:"occurred_on" json:"occurred_on"`
+	ID       string    `bson:"id" json:"id"`
+	StartsAt time.Time `bson:"starts_at" json:"starts_at"`
+	EndsAt   time.Time `bson:"ends_at" json:"ends_at"`
 }
 
 func NewStatusTime(id string, startsAt time.Time, endsAt time.Time) *StatusTime {
@@ -54,14 +54,14 @@ func NewStatusTime(id string, startsAt time.Time, endsAt time.Time) *StatusTime 
 }
 
 func (e *StatusTime) OccurredOn() time.Time {
-	return e.occurredOn
+	return e.Occurred
 }
 
 type StatusReasonChanged struct {
-	occurredOn time.Time        `bson:"occurred_on" json:"occurred_on"`
-	ID         string           `bson:"id" json:"id"`
-	Reason     Reason           `bson:"reason" json:"reason"`
-	Message    string           `bson:"message" json:"message"`
+	Occurred time.Time `bson:"occurred_on" json:"occurred_on"`
+	ID       string    `bson:"id" json:"id"`
+	Reason   Reason    `bson:"reason" json:"reason"`
+	Message  string    `bson:"message" json:"message"`
 }
 
 func NewStatusReasonChanged(id string, reason Reason, message string) *StatusReasonChanged {
@@ -69,13 +69,13 @@ func NewStatusReasonChanged(id string, reason Reason, message string) *StatusRea
 }
 
 func (e *StatusReasonChanged) OccurredOn() time.Time {
-	return e.occurredOn
+	return e.Occurred
 }
 
 type StatusTimePeriodChanged struct {
-	occurredOn time.Time        `bson:"occurred_on" json:"occurred_on"`
-	ID         string           `bson:"id" json:"id"`
-	TimePeriod TimePeriod   `bson:"time_period" json:"time_period"`
+	Occurred   time.Time  `bson:"occurred_on" json:"occurred_on"`
+	ID         string     `bson:"id" json:"id"`
+	TimePeriod TimePeriod `bson:"time_period" json:"time_period"`
 }
 
 func NewStatusTimePeriodChanged(id string, timePeriod TimePeriod) *StatusTimePeriodChanged {
@@ -83,5 +83,5 @@ func NewStatusTimePeriodChanged(id string, timePeriod TimePeriod) *StatusTimePer
 }
 
 func (e *StatusTimePeriodChanged) OccurredOn() time.Time {
-	return e.occurredOn
+	return e.Occurred
 }

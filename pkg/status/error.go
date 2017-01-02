@@ -3,7 +3,7 @@ package status
 import (
 	"net/http"
 
-	"github.com/italolelis/hellowork-api/errors"
+	"github.com/italolelis/hellowork-api/pkg/errors"
 )
 
 var (

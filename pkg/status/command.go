@@ -22,7 +22,7 @@ type CreateStatus struct {
 
 type UpdateStatus struct {
 	Command
-	ID string    `json:"id"`
+	ID string `json:"id"`
 }
 
 type RemoveStatus struct {

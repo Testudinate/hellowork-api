@@ -6,8 +6,8 @@ import (
 	"time"
 
 	jwt "github.com/dgrijalva/jwt-go"
-	"github.com/hellofresh/janus/request"
-	"github.com/hellofresh/janus/response"
+	"github.com/italolelis/hellowork-api/pkg/request"
+	"github.com/italolelis/hellowork-api/pkg/response"
 )
 
 // Handler struct

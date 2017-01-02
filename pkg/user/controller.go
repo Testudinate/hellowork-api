@@ -5,10 +5,10 @@ import (
 
 	log "github.com/Sirupsen/logrus"
 	"github.com/hellofresh/goengine"
-	"github.com/hellofresh/janus/request"
-	"github.com/italolelis/hellowork-api/errors"
-	"github.com/italolelis/hellowork-api/response"
-	"github.com/italolelis/hellowork-api/router"
+	"github.com/italolelis/hellowork-api/pkg/errors"
+	"github.com/italolelis/hellowork-api/pkg/request"
+	"github.com/italolelis/hellowork-api/pkg/response"
+	"github.com/italolelis/hellowork-api/pkg/router"
 )
 
 // UsersController is the api rest controller

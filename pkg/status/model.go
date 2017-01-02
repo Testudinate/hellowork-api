@@ -1,8 +1,8 @@
 package status
 
 import (
-	"time"
 	"github.com/hellofresh/goengine"
+	"time"
 )
 
 var (
@@ -23,15 +23,15 @@ type Reason string
 
 type Status struct {
 	*goengine.AggregateRootBased
-	CreatedAt  time.Time `bson:"created_at"`
-	UpdatedAt  time.Time `bson:"updated_at"`
-	IsActive   bool `bson:"is_active"`
-	UserID     string `bson:"id"`
-	Reason     Reason `bson:"reason"`
-	IsAllDay   bool `bson:"is_all_day"`
-	StartsAt   time.Time `bson:"starts_at"`
-	EndsAt     time.Time `bson:"ends_at"`
-	Message    string `bson:"message"`
+	CreatedAt  time.Time  `bson:"created_at"`
+	UpdatedAt  time.Time  `bson:"updated_at"`
+	IsActive   bool       `bson:"is_active"`
+	UserID     string     `bson:"id"`
+	Reason     Reason     `bson:"reason"`
+	IsAllDay   bool       `bson:"is_all_day"`
+	StartsAt   time.Time  `bson:"starts_at"`
+	EndsAt     time.Time  `bson:"ends_at"`
+	Message    string     `bson:"message"`
 	TimePeriod TimePeriod `bson:"time_period"`
 }
 

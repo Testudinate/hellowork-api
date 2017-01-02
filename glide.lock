@@ -1,5 +1,5 @@
 hash: 9c460ac098efd5236117ac599b7b613d7a1d6587835c9af227088fb2c944960d
-updated: 2017-01-01T18:04:26.713621523+01:00
+updated: 2017-01-02T13:46:35.064155186+01:00
 imports:
 - name: github.com/dgrijalva/jwt-go
   version: d2709f9f1f31ebcda9651b03077758c1f3a0018c
@@ -12,12 +12,6 @@ imports:
   - inmemory
   - mongodb
   - reflection
-- name: github.com/hellofresh/janus
-  version: 3d34590e3e9f76da128ca18eab8df7427cb27e44
-  subpackages:
-  - mock
-  - request
-  - response
 - name: github.com/justinas/alice
   version: 052b8b6c18edb9db317af86806d8e00ebaa94160
 - name: github.com/kelseyhightower/envconfig
@@ -40,14 +34,6 @@ imports:
   - internal/sasl
   - internal/scram
 testImports:
-- name: github.com/davecgh/go-spew
-  version: 5215b55f46b2b919f50a1df0eaa5886afe4e3b3d
-  subpackages:
-  - spew
-- name: github.com/pmezard/go-difflib
-  version: 792786c7400a136282c1664665ae0a8db921c6c2
-  subpackages:
-  - difflib
 - name: github.com/stretchr/testify
   version: 69483b4bd14f5845b5a1e55bca19e954e827f1d0
   subpackages:

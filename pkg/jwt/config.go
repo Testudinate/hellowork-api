@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/italolelis/hellowork-api/errors"
+	"github.com/italolelis/hellowork-api/pkg/errors"
 )
 
 // Config struct

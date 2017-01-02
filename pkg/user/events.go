@@ -3,9 +3,9 @@ package user
 import "time"
 
 type UserCreated struct {
-	occurredOn time.Time        `bson:"occurred_on" json:"occurred_on"`
-	UserID     string           `bson:"user_id" json:"user_id"`
-	Username   string           `bson:"username" json:"username"`
+	Occurred time.Time `bson:"occurred_on" json:"occurred_on"`
+	UserID   string    `bson:"user_id" json:"user_id"`
+	Username string    `bson:"username" json:"username"`
 }
 
 func NewUserCreated(userID string, username string) *UserCreated {
@@ -13,5 +13,5 @@ func NewUserCreated(userID string, username string) *UserCreated {
 }
 
 func (e *UserCreated) OccurredOn() time.Time {
-	return e.occurredOn
+	return e.Occurred
 }
